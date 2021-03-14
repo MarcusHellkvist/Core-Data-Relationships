@@ -51,7 +51,7 @@ class CourseDetailsViewController: UIViewController {
             teacherLabel.text = course.teacher
             ratingImage.image = RatingModel.getRatingImage(number: course.rating)
             priceLabel.text = ("\(course.price) kr")
-//            interestedStudentsLabel.text = ("\(course.users?.count ?? 0) students are interested in this course!")
+            interestedStudentsLabel.text = ("\(course.users?.count ?? 0) students are interested in this course!")
             
         } else {
             print("course is nil")
@@ -61,17 +61,43 @@ class CourseDetailsViewController: UIViewController {
     
     @IBAction func WishlistButton(_ sender: UIButton) {
         
-        delegate?.addToWishlist(course: course!)
-        dismiss(animated: true, completion: nil)
+        let alert = UIAlertController(title: "Wishlish", message: "Course has been added to your wishlish", preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Ok", style: .default) { (action) in
+            
+            self.delegate?.addToWishlist(course: self.course!)
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        alert.addAction(okButton)
+        present(alert, animated: true, completion: nil)
         
     }
     @IBAction func EnrollButton(_ sender: UIButton) {
-        delegate?.addToEnrolled(course: course!)
-        dismiss(animated: true, completion: nil)
+        
+        let alert = UIAlertController(title: "Enrolled", message: "You are now registered on this course!", preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Ok", style: .default) { (action) in
+            
+            self.delegate?.addToEnrolled(course: self.course!)
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        alert.addAction(okButton)
+        present(alert, animated: true, completion: nil)
+        
     }
     @IBAction func BuyButton(_ sender: UIButton) {
-        delegate?.addToBought(course: course!)
-        dismiss(animated: true, completion: nil)
+        
+        let alert = UIAlertController(title: "Buy Course", message: "Do you want to buy this course?", preferredStyle: .alert)
+        let buyButton = UIAlertAction(title: "Buy", style: .default) { (action) in
+            self.delegate?.addToBought(course: self.course!)
+            self.dismiss(animated: true, completion: nil)
+        }
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(buyButton)
+        alert.addAction(cancelButton)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

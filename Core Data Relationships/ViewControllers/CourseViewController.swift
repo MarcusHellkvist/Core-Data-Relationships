@@ -177,16 +177,18 @@ extension CourseViewController: CourseDelegate {
     func addToWishlist(course: Course) {
         print("\(course.title) added to \(currentUser.username) wishlist!")
         currentUser.addToWishlist(course)
-//        course.addToUsers(currentUser)
         DataManager.shared.saveContext()
     }
     
     func addToBought(course: Course) {
         DataManager.shared.createUserCourse(user: currentUser, course: course, status: 1)
+        DataManager.shared.saveContext()
     }
     
     func addToEnrolled(course: Course) {
         DataManager.shared.createUserCourse(user: currentUser, course: course, status: 2)
+        //course.addToUsers(currentUser)
+        DataManager.shared.saveContext()
     }
     
     
