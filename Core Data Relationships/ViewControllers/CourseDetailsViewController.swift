@@ -75,10 +75,9 @@ class CourseDetailsViewController: UIViewController {
     }
     @IBAction func EnrollButton(_ sender: UIButton) {
         
-        let alert = UIAlertController(title: "Enrolled", message: "You are now registered on this course!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Enrolled", message: "You are now registered for this course", preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Ok", style: .default) { (action) in
-            
             self.delegate?.addToEnrolled(course: self.course!)
             self.dismiss(animated: true, completion: nil)
         }

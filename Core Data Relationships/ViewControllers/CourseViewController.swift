@@ -174,9 +174,11 @@ extension CourseViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension CourseViewController: CourseDelegate {
+    
     func addToWishlist(course: Course) {
         print("\(course.title) added to \(currentUser.username) wishlist!")
         currentUser.addToWishlist(course)
+        course.addToUsers(currentUser)
         DataManager.shared.saveContext()
     }
     
@@ -187,9 +189,7 @@ extension CourseViewController: CourseDelegate {
     
     func addToEnrolled(course: Course) {
         DataManager.shared.createUserCourse(user: currentUser, course: course, status: 2)
-        //course.addToUsers(currentUser)
         DataManager.shared.saveContext()
     }
-    
-    
+
 }
