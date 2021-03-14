@@ -116,15 +116,24 @@ extension ActiveCoursesViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let userCourse = allCourses[indexPath.section][indexPath.row]
         
-        if userCourse.progression >= 1.0 {
-            userCourse.progression = 1.0
-        } else {
-            userCourse.progression += 0.1
-        }
+        performSegue(withIdentifier: "progressSegue", sender: userCourse)
         
-        tableView.reloadData()
-        DataManager.shared.saveContext()
+//        if userCourse.progression >= 1.0 {
+//            userCourse.progression = 1.0
+//        } else {
+//            userCourse.progression += 0.1
+//        }
+//
+//        tableView.reloadData()
+//        DataManager.shared.saveContext()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "progressSegue" {
+            guard let destVC = segue.destination as? ProgressionViewController else { return }
+            guard let userCourse = sender as? UserCourse else { return }
+            destVC.userCourse = userCourse
+        }
+    }
     
 }

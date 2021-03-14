@@ -127,7 +127,7 @@ class DataManager {
     
     func createUserCourse(user: User, course: Course, status: Int64) -> Bool {
         
-        // Get the course connected to userid and courseid
+        // SE OM KURSEN REDAN ÄR REGISTERAD ELLER KÖPT
         let request: NSFetchRequest<UserCourse> = UserCourse.fetchRequest()
         let predicate = NSPredicate(format: "user.userId == %i AND course.courseId == %i", user.userId, course.courseId)
         request.predicate = predicate
@@ -146,8 +146,22 @@ class DataManager {
             userCourse.progression = 0.0
             userCourse.status = status
             return true
+        } else {
+            switch status {
+            case 1:
+                updateUserCourseStatus(userCourse: courses[0], status: 1)
+            case 2:
+                updateUserCourseStatus(userCourse: courses[0], status: 2)
+            default:
+                updateUserCourseStatus(userCourse: courses[0], status: 0)
+            }
         }
+        
         return false
+    }
+    
+    private func updateUserCourseStatus(userCourse: UserCourse, status: Int64) {
+        userCourse.status = status
     }
     
     private func getActiveCourses(user: User) -> [UserCourse] {

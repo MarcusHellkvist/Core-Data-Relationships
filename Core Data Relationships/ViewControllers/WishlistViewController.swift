@@ -55,6 +55,16 @@ class WishlistViewController: UIViewController {
         refreshControl.endRefreshing()
 
     }
+    
+    func showErrorAlert() {
+        let alert = UIAlertController(title: "Error", message: "You have already bought/registered on this course!", preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Ok", style: .default)
+        
+        alert.addAction(okButton)
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
@@ -91,7 +101,10 @@ extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
                 self.currentUser.removeFromWishlist(course)
                 DataManager.shared.saveContext()
                 self.getWishlist()
+            } else {
+                self.showErrorAlert()
             }
+            
             
         }
         let registerButton = UIAlertAction(title: "Register", style: .default) { (action) in
@@ -100,6 +113,8 @@ extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
                 self.currentUser.removeFromWishlist(course)
                 DataManager.shared.saveContext()
                 self.getWishlist()
+            } else {
+                self.showErrorAlert()
             }
             
         }

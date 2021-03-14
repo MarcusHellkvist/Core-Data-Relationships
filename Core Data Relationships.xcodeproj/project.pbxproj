@@ -35,6 +35,8 @@
 		03EFBA3425FD1EEF00756D62 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3325FD1EEF00756D62 /* CustomButton.swift */; };
 		03EFBA3825FD1F1400756D62 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3725FD1F1400756D62 /* CustomTextField.swift */; };
 		03EFBA3B25FD218F00756D62 /* RatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3A25FD218F00756D62 /* RatingModel.swift */; };
+		03EFBA4125FE362A00756D62 /* ProgressionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA4025FE362A00756D62 /* ProgressionTableViewCell.swift */; };
+		03EFBA4725FE36AC00756D62 /* ProgressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA4625FE36AC00756D62 /* ProgressionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		03EFBA3325FD1EEF00756D62 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		03EFBA3725FD1F1400756D62 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		03EFBA3A25FD218F00756D62 /* RatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModel.swift; sourceTree = "<group>"; };
+		03EFBA4025FE362A00756D62 /* ProgressionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionTableViewCell.swift; sourceTree = "<group>"; };
+		03EFBA4625FE36AC00756D62 /* ProgressionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				031D6CBD25F9985300C99BEA /* CourseDetailsViewController.swift */,
 				031D6CC325F99BA100C99BEA /* WishlistViewController.swift */,
 				034CC07C25FA74560066E4E7 /* ActiveCoursesViewController.swift */,
+				03EFBA4625FE36AC00756D62 /* ProgressionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 				031D6CB525F994F200C99BEA /* CategoryModel.swift */,
 				034CC07F25FA74F80066E4E7 /* ActiveCourseTableViewCell.swift */,
 				03EFBA3A25FD218F00756D62 /* RatingModel.swift */,
+				03EFBA4025FE362A00756D62 /* ProgressionTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 				03EFBA2B25FB90A400756D62 /* Course+CoreDataProperties.swift in Sources */,
 				034CC07D25FA74560066E4E7 /* ActiveCoursesViewController.swift in Sources */,
 				031D6CC125F9989000C99BEA /* CourseDelegate.swift in Sources */,
+				03EFBA4725FE36AC00756D62 /* ProgressionViewController.swift in Sources */,
 				03EFBA3825FD1F1400756D62 /* CustomTextField.swift in Sources */,
 				035CDFA525F8DE400014AE31 /* AppDelegate.swift in Sources */,
 				03EFBA2725FB90A400756D62 /* User+CoreDataProperties.swift in Sources */,
@@ -266,6 +273,7 @@
 				035CDFAF25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld in Sources */,
 				031D6C8925F9886700C99BEA /* RegisterViewController.swift in Sources */,
 				031D6CA025F98C7400C99BEA /* UserDelegate.swift in Sources */,
+				03EFBA4125FE362A00756D62 /* ProgressionTableViewCell.swift in Sources */,
 				03EFBA3B25FD218F00756D62 /* RatingModel.swift in Sources */,
 				035CDFA725F8DE400014AE31 /* SceneDelegate.swift in Sources */,
 				03EFBA2A25FB90A400756D62 /* Course+CoreDataClass.swift in Sources */,
