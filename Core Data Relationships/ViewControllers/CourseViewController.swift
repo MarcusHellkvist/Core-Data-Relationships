@@ -38,9 +38,21 @@ class CourseViewController: UIViewController {
     
     func createCourses() {
         
+        
+        // CREATE INDIVIDUAL LESSONS
+        let lesson1 = DataManager.shared.createLesson(title: "Lesson 01 - Introduktion", length: 1)
+        let lesson2 = DataManager.shared.createLesson(title: "Lesson 02 - Where do we begin?", length: 4)
+        let lesson3 = DataManager.shared.createLesson(title: "Lesson 03 - Basics of HTML", length: 2)
+        let lesson4 = DataManager.shared.createLesson(title: "Lesson 04 - Basics of CSS", length: 2)
+        
+        let lesson5 = DataManager.shared.createLesson(title: "Lesson 01 - Advanced CSS the Hard way!", length: 2)
+        let lesson6 = DataManager.shared.createLesson(title: "Lesson 02 - Why should I know this?", length: 2)
+        
         //WEBBUTVECKLING
-        DataManager.shared.createCourse(id: 1, title: "HTML och CSS", desc: "Innehållstext", rating: 5, length: 10, teacher: "Fredrik Lingodricka", category: 1, price: 299)
-        DataManager.shared.createCourse(id: 2, title: "Avancerad CSS", desc: "Innehållstext", rating: 4, length: 12, teacher: "Jonny Senap", category: 1, price: 99)
+        DataManager.shared.createCourseWithLessons(id: 1, title: "HTML och CSS", desc: "Innehållstext", rating: 5, length: 10, teacher: "Fredrik Lingodricka", category: 1, price: 299, lessons: [lesson1, lesson2, lesson3, lesson4])
+        
+        DataManager.shared.createCourseWithLessons(id: 2, title: "Avancerad CSS", desc: "Innehållstext", rating: 4, length: 12, teacher: "Jonny Senap", category: 1, price: 99, lessons: [lesson5, lesson6])
+        
         DataManager.shared.createCourse(id: 3, title: "JavaScript för Nybörjare", desc: "Innehållstext", rating: 3, length: 16, teacher: "Henrik Script", category: 1, price: 349)
         DataManager.shared.createCourse(id: 4, title: "Avancerad JavaScript och serverprogrammering", desc: "Innehållstext", rating: 1, length: 25, teacher: "Henrik Script", category: 1, price: 499)
         DataManager.shared.createCourse(id: 5, title: "JavaScript för Webben", desc: "Innehållstext", rating: 2, length: 8, teacher: "Henrik Script", category: 1, price: 249)

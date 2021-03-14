@@ -538,7 +538,7 @@
                                 <rect key="frame" x="20" y="153" width="374" height="602"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="progressionCell" rowHeight="100" id="XBd-k9-CWn" customClass="ProgressionTableViewCell" customModule="Core_Data_Relationships" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lessonCell" rowHeight="100" id="XBd-k9-CWn" customClass="ProgressionTableViewCell" customModule="Core_Data_Relationships" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XBd-k9-CWn" id="GcM-ve-V1C">
@@ -611,6 +611,7 @@
                         <outlet property="courseTitle" destination="LOc-2x-FYq" id="f7r-HI-YGO"/>
                         <outlet property="progressView" destination="BfL-P4-S0G" id="tji-if-Bvf"/>
                         <outlet property="progressViewLabel" destination="Rcj-0U-NZI" id="FXC-gf-b9l"/>
+                        <outlet property="tableView" destination="cUb-nl-cO7" id="YN6-Ed-itF"/>
                         <outlet property="teacherLabel" destination="fj0-yq-4nh" id="RJy-xc-301"/>
                     </connections>
                 </viewController>

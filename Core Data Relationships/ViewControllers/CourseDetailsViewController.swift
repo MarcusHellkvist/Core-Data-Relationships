@@ -39,6 +39,8 @@ class CourseDetailsViewController: UIViewController {
         setupDetailCourse()
         currentUser = DataManager.shared.getCurrentUser()
         
+        // TODO Disable buttons / change text
+        
 
     }
     

@@ -2,7 +2,7 @@
 //  Course+CoreDataProperties.swift
 //  Core Data Relationships
 //
-//  Created by Marcus Hellkvist on 2021-03-12.
+//  Created by Marcus Hellkvist on 2021-03-14.
 //
 //
 
@@ -24,8 +24,26 @@ extension Course {
     @NSManaged public var rating: Int64
     @NSManaged public var teacher: String?
     @NSManaged public var title: String?
+    @NSManaged public var lesson: NSSet?
     @NSManaged public var userCourse: NSSet?
     @NSManaged public var users: NSSet?
+
+}
+
+// MARK: Generated accessors for lesson
+extension Course {
+
+    @objc(addLessonObject:)
+    @NSManaged public func addToLesson(_ value: Lesson)
+
+    @objc(removeLessonObject:)
+    @NSManaged public func removeFromLesson(_ value: Lesson)
+
+    @objc(addLesson:)
+    @NSManaged public func addToLesson(_ values: NSSet)
+
+    @objc(removeLesson:)
+    @NSManaged public func removeFromLesson(_ values: NSSet)
 
 }
 

@@ -25,18 +25,20 @@
 		035CDFAF25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 035CDFAD25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld */; };
 		035CDFB125F8DE460014AE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035CDFB025F8DE460014AE31 /* Assets.xcassets */; };
 		035CDFB425F8DE460014AE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035CDFB225F8DE460014AE31 /* LaunchScreen.storyboard */; };
-		03EFBA2625FB90A400756D62 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2025FB90A400756D62 /* User+CoreDataClass.swift */; };
-		03EFBA2725FB90A400756D62 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2125FB90A400756D62 /* User+CoreDataProperties.swift */; };
-		03EFBA2825FB90A400756D62 /* UserCourse+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2225FB90A400756D62 /* UserCourse+CoreDataClass.swift */; };
-		03EFBA2925FB90A400756D62 /* UserCourse+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2325FB90A400756D62 /* UserCourse+CoreDataProperties.swift */; };
-		03EFBA2A25FB90A400756D62 /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2425FB90A400756D62 /* Course+CoreDataClass.swift */; };
-		03EFBA2B25FB90A400756D62 /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2525FB90A400756D62 /* Course+CoreDataProperties.swift */; };
 		03EFBA3025FD1E9E00756D62 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2F25FD1E9E00756D62 /* CustomColors.swift */; };
 		03EFBA3425FD1EEF00756D62 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3325FD1EEF00756D62 /* CustomButton.swift */; };
 		03EFBA3825FD1F1400756D62 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3725FD1F1400756D62 /* CustomTextField.swift */; };
 		03EFBA3B25FD218F00756D62 /* RatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3A25FD218F00756D62 /* RatingModel.swift */; };
 		03EFBA4125FE362A00756D62 /* ProgressionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA4025FE362A00756D62 /* ProgressionTableViewCell.swift */; };
 		03EFBA4725FE36AC00756D62 /* ProgressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA4625FE36AC00756D62 /* ProgressionViewController.swift */; };
+		03FB9F1C25FE420E002C503B /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1425FE420E002C503B /* User+CoreDataClass.swift */; };
+		03FB9F1D25FE420E002C503B /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1525FE420E002C503B /* User+CoreDataProperties.swift */; };
+		03FB9F1E25FE420E002C503B /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1625FE420E002C503B /* Course+CoreDataClass.swift */; };
+		03FB9F1F25FE420E002C503B /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1725FE420E002C503B /* Course+CoreDataProperties.swift */; };
+		03FB9F2025FE420E002C503B /* UserCourse+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1825FE420E002C503B /* UserCourse+CoreDataClass.swift */; };
+		03FB9F2125FE420E002C503B /* UserCourse+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1925FE420E002C503B /* UserCourse+CoreDataProperties.swift */; };
+		03FB9F2225FE420E002C503B /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1A25FE420E002C503B /* Lesson+CoreDataClass.swift */; };
+		03FB9F2325FE420E002C503B /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FB9F1B25FE420E002C503B /* Lesson+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,18 +62,20 @@
 		035CDFB025F8DE460014AE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		035CDFB325F8DE460014AE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		035CDFB525F8DE460014AE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03EFBA2025FB90A400756D62 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		03EFBA2125FB90A400756D62 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		03EFBA2225FB90A400756D62 /* UserCourse+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCourse+CoreDataClass.swift"; sourceTree = "<group>"; };
-		03EFBA2325FB90A400756D62 /* UserCourse+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCourse+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		03EFBA2425FB90A400756D62 /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataClass.swift"; sourceTree = "<group>"; };
-		03EFBA2525FB90A400756D62 /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		03EFBA2F25FD1E9E00756D62 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		03EFBA3325FD1EEF00756D62 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		03EFBA3725FD1F1400756D62 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		03EFBA3A25FD218F00756D62 /* RatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModel.swift; sourceTree = "<group>"; };
 		03EFBA4025FE362A00756D62 /* ProgressionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionTableViewCell.swift; sourceTree = "<group>"; };
 		03EFBA4625FE36AC00756D62 /* ProgressionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionViewController.swift; sourceTree = "<group>"; };
+		03FB9F1425FE420E002C503B /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		03FB9F1525FE420E002C503B /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03FB9F1625FE420E002C503B /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataClass.swift"; sourceTree = "<group>"; };
+		03FB9F1725FE420E002C503B /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03FB9F1825FE420E002C503B /* UserCourse+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCourse+CoreDataClass.swift"; sourceTree = "<group>"; };
+		03FB9F1925FE420E002C503B /* UserCourse+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCourse+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03FB9F1A25FE420E002C503B /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		03FB9F1B25FE420E002C503B /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +106,14 @@
 		031D6C8625F987D800C99BEA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				03EFBA2025FB90A400756D62 /* User+CoreDataClass.swift */,
-				03EFBA2125FB90A400756D62 /* User+CoreDataProperties.swift */,
-				03EFBA2225FB90A400756D62 /* UserCourse+CoreDataClass.swift */,
-				03EFBA2325FB90A400756D62 /* UserCourse+CoreDataProperties.swift */,
-				03EFBA2425FB90A400756D62 /* Course+CoreDataClass.swift */,
-				03EFBA2525FB90A400756D62 /* Course+CoreDataProperties.swift */,
+				03FB9F1425FE420E002C503B /* User+CoreDataClass.swift */,
+				03FB9F1525FE420E002C503B /* User+CoreDataProperties.swift */,
+				03FB9F1625FE420E002C503B /* Course+CoreDataClass.swift */,
+				03FB9F1725FE420E002C503B /* Course+CoreDataProperties.swift */,
+				03FB9F1825FE420E002C503B /* UserCourse+CoreDataClass.swift */,
+				03FB9F1925FE420E002C503B /* UserCourse+CoreDataProperties.swift */,
+				03FB9F1A25FE420E002C503B /* Lesson+CoreDataClass.swift */,
+				03FB9F1B25FE420E002C503B /* Lesson+CoreDataProperties.swift */,
 				031D6CB525F994F200C99BEA /* CategoryModel.swift */,
 				034CC07F25FA74F80066E4E7 /* ActiveCourseTableViewCell.swift */,
 				03EFBA3A25FD218F00756D62 /* RatingModel.swift */,
@@ -258,29 +264,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				031D6C8325F987C800C99BEA /* LoginViewController.swift in Sources */,
-				03EFBA2925FB90A400756D62 /* UserCourse+CoreDataProperties.swift in Sources */,
 				031D6CB625F994F200C99BEA /* CategoryModel.swift in Sources */,
 				031D6C8D25F9898A00C99BEA /* DataManager.swift in Sources */,
+				03FB9F2325FE420E002C503B /* Lesson+CoreDataProperties.swift in Sources */,
 				031D6CA325F9917D00C99BEA /* CourseViewController.swift in Sources */,
-				03EFBA2B25FB90A400756D62 /* Course+CoreDataProperties.swift in Sources */,
 				034CC07D25FA74560066E4E7 /* ActiveCoursesViewController.swift in Sources */,
+				03FB9F2025FE420E002C503B /* UserCourse+CoreDataClass.swift in Sources */,
 				031D6CC125F9989000C99BEA /* CourseDelegate.swift in Sources */,
 				03EFBA4725FE36AC00756D62 /* ProgressionViewController.swift in Sources */,
 				03EFBA3825FD1F1400756D62 /* CustomTextField.swift in Sources */,
+				03FB9F2225FE420E002C503B /* Lesson+CoreDataClass.swift in Sources */,
+				03FB9F1C25FE420E002C503B /* User+CoreDataClass.swift in Sources */,
 				035CDFA525F8DE400014AE31 /* AppDelegate.swift in Sources */,
-				03EFBA2725FB90A400756D62 /* User+CoreDataProperties.swift in Sources */,
-				03EFBA2625FB90A400756D62 /* User+CoreDataClass.swift in Sources */,
 				035CDFAF25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld in Sources */,
 				031D6C8925F9886700C99BEA /* RegisterViewController.swift in Sources */,
 				031D6CA025F98C7400C99BEA /* UserDelegate.swift in Sources */,
 				03EFBA4125FE362A00756D62 /* ProgressionTableViewCell.swift in Sources */,
 				03EFBA3B25FD218F00756D62 /* RatingModel.swift in Sources */,
 				035CDFA725F8DE400014AE31 /* SceneDelegate.swift in Sources */,
-				03EFBA2A25FB90A400756D62 /* Course+CoreDataClass.swift in Sources */,
-				03EFBA2825FB90A400756D62 /* UserCourse+CoreDataClass.swift in Sources */,
+				03FB9F1F25FE420E002C503B /* Course+CoreDataProperties.swift in Sources */,
 				031D6CBE25F9985300C99BEA /* CourseDetailsViewController.swift in Sources */,
 				03EFBA3025FD1E9E00756D62 /* CustomColors.swift in Sources */,
+				03FB9F1E25FE420E002C503B /* Course+CoreDataClass.swift in Sources */,
+				03FB9F2125FE420E002C503B /* UserCourse+CoreDataProperties.swift in Sources */,
 				03EFBA3425FD1EEF00756D62 /* CustomButton.swift in Sources */,
+				03FB9F1D25FE420E002C503B /* User+CoreDataProperties.swift in Sources */,
 				031D6C7F25F9315200C99BEA /* CourseTableViewCell.swift in Sources */,
 				034CC08025FA74F80066E4E7 /* ActiveCourseTableViewCell.swift in Sources */,
 				031D6CC425F99BA100C99BEA /* WishlistViewController.swift in Sources */,

@@ -97,6 +97,8 @@ extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
 
         let buyButton = UIAlertAction(title: "Buy", style: .default) { (action) in
             
+            // TODO - Status on course is still updated!
+            
             if DataManager.shared.createUserCourse(user: self.currentUser, course: course, status: 1){
                 self.currentUser.removeFromWishlist(course)
                 DataManager.shared.saveContext()

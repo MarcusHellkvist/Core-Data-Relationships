@@ -113,6 +113,49 @@ class DataManager {
         course.price = price
     }
     
+    func createCourseWithLessons(id: Int64, title: String, desc: String, rating: Int64, length: Int64, teacher: String, category: Int64, price: Int64, lessons: [Lesson]){
+        let course = Course(context: persistentContainer.viewContext)
+        course.courseId = id
+        course.title = title
+        course.desc = desc
+        course.rating = rating
+        course.length = length
+        course.teacher = teacher
+        course.category = category
+        course.price = price
+        
+        for lesson in lessons {
+            course.addToLesson(lesson)
+        }
+        
+    }
+    
+    func createLesson(title: String, length: Int64) -> Lesson{
+        let lesson = Lesson(context: persistentContainer.viewContext)
+        lesson.title = title
+        lesson.length = length
+        saveContext()
+        return lesson
+    }
+    
+    func getLessonsForCourseId(courseId: Int64) -> [Lesson] {
+        let request: NSFetchRequest<Lesson> = Lesson.fetchRequest()
+        let predicate = NSPredicate(format: "course.courseId == %i", courseId)
+        let sort = NSSortDescriptor(key: "title", ascending: true)
+        request.sortDescriptors = [sort]
+        request.predicate = predicate
+        
+        var lessons: [Lesson] = []
+        
+        do {
+            lessons = try persistentContainer.viewContext.fetch(request)
+        } catch {
+            print("Error fetching lessons")
+        }
+        
+        return lessons
+    }
+    
     func getCourses() -> [Course] {
         let request: NSFetchRequest<Course> = Course.fetchRequest()
         var courses: [Course] = []

@@ -17,8 +17,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //DataManager.shared.deleteAllUsers()
-        //DataManager.shared.deleteAllCourses()
+//        DataManager.shared.deleteAllUsers()
+//        DataManager.shared.deleteAllCourses()
         
         // OVERALL CHANGES TO THE APP
         UITabBar.appearance().tintColor = UIColor.myYellow
