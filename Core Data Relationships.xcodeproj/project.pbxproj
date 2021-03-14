@@ -21,7 +21,6 @@
 		034CC08025FA74F80066E4E7 /* ActiveCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CC07F25FA74F80066E4E7 /* ActiveCourseTableViewCell.swift */; };
 		035CDFA525F8DE400014AE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035CDFA425F8DE400014AE31 /* AppDelegate.swift */; };
 		035CDFA725F8DE400014AE31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035CDFA625F8DE400014AE31 /* SceneDelegate.swift */; };
-		035CDFA925F8DE400014AE31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035CDFA825F8DE400014AE31 /* ViewController.swift */; };
 		035CDFAC25F8DE400014AE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035CDFAA25F8DE400014AE31 /* Main.storyboard */; };
 		035CDFAF25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 035CDFAD25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld */; };
 		035CDFB125F8DE460014AE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035CDFB025F8DE460014AE31 /* Assets.xcassets */; };
@@ -54,7 +53,6 @@
 		035CDFA125F8DE400014AE31 /* Core Data Relationships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data Relationships.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035CDFA425F8DE400014AE31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		035CDFA625F8DE400014AE31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		035CDFA825F8DE400014AE31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		035CDFAB25F8DE400014AE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		035CDFAE25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data_Relationships.xcdatamodel; sourceTree = "<group>"; };
 		035CDFB025F8DE460014AE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				031D6C8125F9875000C99BEA /* ViewControllers */,
 				035CDFA425F8DE400014AE31 /* AppDelegate.swift */,
 				035CDFA625F8DE400014AE31 /* SceneDelegate.swift */,
-				035CDFA825F8DE400014AE31 /* ViewController.swift */,
 				035CDFAA25F8DE400014AE31 /* Main.storyboard */,
 				035CDFB025F8DE460014AE31 /* Assets.xcassets */,
 				031D6C7E25F9315200C99BEA /* CourseTableViewCell.swift */,
@@ -256,7 +253,6 @@
 			files = (
 				031D6C8325F987C800C99BEA /* LoginViewController.swift in Sources */,
 				03EFBA2925FB90A400756D62 /* UserCourse+CoreDataProperties.swift in Sources */,
-				035CDFA925F8DE400014AE31 /* ViewController.swift in Sources */,
 				031D6CB625F994F200C99BEA /* CategoryModel.swift in Sources */,
 				031D6C8D25F9898A00C99BEA /* DataManager.swift in Sources */,
 				031D6CA325F9917D00C99BEA /* CourseViewController.swift in Sources */,
