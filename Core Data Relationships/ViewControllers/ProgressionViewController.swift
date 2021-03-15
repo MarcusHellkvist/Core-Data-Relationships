@@ -83,6 +83,7 @@ extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "lessonCell", for: indexPath) as! ProgressionTableViewCell
         
         let lesson = lessons[indexPath.row]
+        cell.delegate = self
         
         cell.lessonTitleLabel.text = lesson.title
         cell.lessonLengthLabel.text = ("Estimated: \(String(lesson.length)) hours")
@@ -90,8 +91,24 @@ extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource 
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        let progression = totalAmount / Double(lessonAmount)
+//
+//        if userCourse!.progression >= 1.0 {
+//            userCourse?.progression = 1.0
+//        } else {
+//            userCourse?.progression += progression
+//        }
+//        DataManager.shared.saveContext()
+//        getUserCourse()
+//    }
+    
+    
+}
+
+extension ProgressionViewController: MyCellDelegate{
+    func didTapButtonInCell(_ cell: ProgressionTableViewCell) {
         let progression = totalAmount / Double(lessonAmount)
         
         if userCourse!.progression >= 1.0 {
@@ -102,6 +119,4 @@ extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource 
         DataManager.shared.saveContext()
         getUserCourse()
     }
-    
-    
 }

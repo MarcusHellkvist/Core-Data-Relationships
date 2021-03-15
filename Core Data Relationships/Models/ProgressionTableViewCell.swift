@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol MyCellDelegate: class {
+    func didTapButtonInCell(_ cell: ProgressionTableViewCell)
+}
+
 class ProgressionTableViewCell: UITableViewCell {
 
     @IBOutlet var lessonTitleLabel: UILabel!
     @IBOutlet var lessonLengthLabel: UILabel!
+    @IBOutlet var cellButton: UIButton!
+    
+    weak var delegate: MyCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,5 +33,10 @@ class ProgressionTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func cellButtonTapped(_ sender: UIButton) {
+        delegate?.didTapButtonInCell(self)
+    }
+    
 
 }

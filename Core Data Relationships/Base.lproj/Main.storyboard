@@ -538,7 +538,7 @@
                                 <rect key="frame" x="0.0" y="236.5" width="414" height="572.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lessonCell" rowHeight="80" id="XBd-k9-CWn" customClass="ProgressionTableViewCell" customModule="Core_Data_Relationships" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lessonCell" rowHeight="80" id="XBd-k9-CWn" customClass="ProgressionTableViewCell" customModule="Core_Data_Relationships" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XBd-k9-CWn" id="GcM-ve-V1C">
@@ -557,16 +557,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlX-8G-MHo">
+                                                    <rect key="frame" x="299" y="25" width="95" height="30"/>
+                                                    <state key="normal" title="Mark as Done"/>
+                                                    <connections>
+                                                        <action selector="cellButtonTapped:" destination="XBd-k9-CWn" eventType="touchUpInside" id="4dZ-Gd-aeQ"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BaY-aO-nJa" secondAttribute="bottom" constant="14.5" id="5GH-mo-BVr"/>
                                                 <constraint firstItem="g9Y-4E-As0" firstAttribute="top" secondItem="GcM-ve-V1C" secondAttribute="topMargin" constant="4" id="AXr-e0-4Kx"/>
                                                 <constraint firstItem="BaY-aO-nJa" firstAttribute="leading" secondItem="GcM-ve-V1C" secondAttribute="leadingMargin" id="Ggw-IP-zrt"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="SlX-8G-MHo" secondAttribute="bottom" constant="14" id="IEv-P3-yMg"/>
+                                                <constraint firstItem="SlX-8G-MHo" firstAttribute="top" secondItem="GcM-ve-V1C" secondAttribute="topMargin" constant="14" id="L2d-9m-SuU"/>
                                                 <constraint firstItem="BaY-aO-nJa" firstAttribute="top" secondItem="g9Y-4E-As0" secondAttribute="bottom" constant="2" id="gmh-ul-WJD"/>
+                                                <constraint firstItem="SlX-8G-MHo" firstAttribute="trailing" secondItem="GcM-ve-V1C" secondAttribute="trailingMargin" id="mPT-3V-CEJ"/>
                                                 <constraint firstItem="g9Y-4E-As0" firstAttribute="leading" secondItem="GcM-ve-V1C" secondAttribute="leadingMargin" id="ozm-Q2-33L"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cellButton" destination="SlX-8G-MHo" id="jSf-FU-qd7"/>
                                             <outlet property="lessonLengthLabel" destination="BaY-aO-nJa" id="B5e-jG-k6M"/>
                                             <outlet property="lessonTitleLabel" destination="g9Y-4E-As0" id="sTp-FR-q2B"/>
                                         </connections>

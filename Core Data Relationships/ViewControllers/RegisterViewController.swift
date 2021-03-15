@@ -28,7 +28,7 @@ class RegisterViewController: UIViewController {
     }
     
     func getRandomUserIdNumber() -> Int64 {
-        return Int64.random(in: 0...1000)
+        return Int64.random(in: 0...10000) // Borde kolla så ett unikt id finns annars crashar appen!
 
     }
     
