@@ -66,7 +66,14 @@ class ProgressionViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
+    @IBAction func reviewButton(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Not Implemented", message: "This function is not implemented at this moment.", preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Ok", style: .default)
+        
+        alert.addAction(okButton)
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource {
@@ -90,20 +97,6 @@ extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource 
         
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        let progression = totalAmount / Double(lessonAmount)
-//
-//        if userCourse!.progression >= 1.0 {
-//            userCourse?.progression = 1.0
-//        } else {
-//            userCourse?.progression += progression
-//        }
-//        DataManager.shared.saveContext()
-//        getUserCourse()
-//    }
-    
     
 }
 

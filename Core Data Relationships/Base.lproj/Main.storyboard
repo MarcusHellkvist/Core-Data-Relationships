@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-Kt-xDW">
-                                <rect key="frame" x="142" y="124" width="130" height="93"/>
+                                <rect key="frame" x="186" y="20" width="524" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="GT4-Eg-DGl"/>
                                     <constraint firstAttribute="height" constant="93" id="Jmo-8k-jGG"/>
@@ -57,9 +57,12 @@
                         <viewLayoutGuide key="safeArea" id="gaa-EB-TVn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="P62-jE-AtT" firstAttribute="top" secondItem="WAI-Kt-xDW" secondAttribute="bottom" constant="8" symbolic="YES" id="6yL-sw-yNp"/>
                             <constraint firstItem="gaa-EB-TVn" firstAttribute="trailing" secondItem="2TJ-N9-TzA" secondAttribute="trailing" constant="20" id="89t-Bz-OUF"/>
                             <constraint firstItem="WAI-Kt-xDW" firstAttribute="leading" secondItem="gaa-EB-TVn" secondAttribute="leading" constant="142" id="8SB-74-sey"/>
-                            <constraint firstItem="WAI-Kt-xDW" firstAttribute="top" secondItem="gaa-EB-TVn" secondAttribute="top" constant="80" id="AcA-KC-Aco"/>
+                            <constraint firstItem="WAI-Kt-xDW" firstAttribute="top" secondItem="gaa-EB-TVn" secondAttribute="top" constant="80" id="AcA-KC-Aco">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="2TJ-N9-TzA" firstAttribute="top" secondItem="wHh-ve-Xyy" secondAttribute="bottom" constant="8" symbolic="YES" id="H7d-wg-MHC"/>
                             <constraint firstItem="gaa-EB-TVn" firstAttribute="trailing" secondItem="wHh-ve-Xyy" secondAttribute="trailing" constant="20" id="IDw-7k-b4F"/>
                             <constraint firstItem="Q10-KE-h1h" firstAttribute="top" secondItem="P62-jE-AtT" secondAttribute="bottom" constant="8" symbolic="YES" id="Mmq-V4-V6e"/>
@@ -68,11 +71,30 @@
                             <constraint firstItem="wHh-ve-Xyy" firstAttribute="top" secondItem="Q10-KE-h1h" secondAttribute="bottom" constant="8" symbolic="YES" id="aA9-hi-kfV"/>
                             <constraint firstItem="gaa-EB-TVn" firstAttribute="trailing" secondItem="P62-jE-AtT" secondAttribute="trailing" constant="20" id="cFy-ES-4vc"/>
                             <constraint firstItem="gaa-EB-TVn" firstAttribute="trailing" secondItem="Q10-KE-h1h" secondAttribute="trailing" constant="20" id="dtw-dF-taC"/>
-                            <constraint firstItem="P62-jE-AtT" firstAttribute="top" secondItem="gaa-EB-TVn" secondAttribute="top" constant="311" id="n0T-aL-9R3"/>
+                            <constraint firstItem="P62-jE-AtT" firstAttribute="top" secondItem="gaa-EB-TVn" secondAttribute="top" constant="311" id="n0T-aL-9R3">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="Q10-KE-h1h" firstAttribute="leading" secondItem="gaa-EB-TVn" secondAttribute="leading" constant="20" id="qXH-rD-yPJ"/>
                             <constraint firstItem="wHh-ve-Xyy" firstAttribute="leading" secondItem="gaa-EB-TVn" secondAttribute="leading" constant="20" id="rGW-VY-GEs"/>
                             <constraint firstItem="P62-jE-AtT" firstAttribute="leading" secondItem="gaa-EB-TVn" secondAttribute="leading" constant="20" id="tVL-xM-Zsd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WAI-Kt-xDW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6yL-sw-yNp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="WAI-Kt-xDW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6yL-sw-yNp"/>
+                                <exclude reference="n0T-aL-9R3"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="Q10-KE-h1h" id="lLY-Ot-Upe"/>
@@ -160,7 +182,10 @@
                             <constraint firstItem="DI8-uc-PJ5" firstAttribute="trailing" secondItem="jg9-1U-v7H" secondAttribute="trailing" constant="20" id="EpY-9y-5se"/>
                             <constraint firstItem="bMY-bf-1eL" firstAttribute="top" secondItem="S7l-Ux-7nh" secondAttribute="bottom" constant="8" symbolic="YES" id="FuA-JZ-asY"/>
                             <constraint firstItem="Cl3-df-1it" firstAttribute="leading" secondItem="DI8-uc-PJ5" secondAttribute="leading" constant="20" id="Joj-w7-TLV"/>
-                            <constraint firstItem="egn-Qd-zp6" firstAttribute="top" secondItem="DI8-uc-PJ5" secondAttribute="top" constant="222" id="KPo-xI-2W4"/>
+                            <constraint firstItem="egn-Qd-zp6" firstAttribute="top" secondItem="DI8-uc-PJ5" secondAttribute="top" constant="222" id="KPo-xI-2W4">
+                                <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="55"/>
+                            </constraint>
                             <constraint firstItem="egn-Qd-zp6" firstAttribute="leading" secondItem="DI8-uc-PJ5" secondAttribute="leading" constant="20" id="LhI-7o-PoW"/>
                             <constraint firstItem="jg9-1U-v7H" firstAttribute="top" secondItem="bSE-G4-lXv" secondAttribute="bottom" constant="8" symbolic="YES" id="SMC-OS-d0E"/>
                             <constraint firstItem="vRc-go-JbT" firstAttribute="leading" secondItem="DI8-uc-PJ5" secondAttribute="leading" constant="20" id="anp-N4-VOf"/>
@@ -429,7 +454,7 @@
                                                     <rect key="frame" x="20" y="11" width="374" height="108"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW6-fZ-ERn">
-                                                            <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                                            <rect key="frame" x="8" y="8" width="358" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -455,6 +480,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="xRn-3D-afZ" secondAttribute="trailing" constant="8" id="0B6-Sd-MpX"/>
                                                         <constraint firstItem="aW6-fZ-ERn" firstAttribute="top" secondItem="gfz-Uw-pWx" secondAttribute="top" constant="8" id="6UQ-KB-O30"/>
                                                         <constraint firstItem="pyO-1E-afB" firstAttribute="leading" secondItem="gfz-Uw-pWx" secondAttribute="leading" constant="8" id="LcT-d4-Ijj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="aW6-fZ-ERn" secondAttribute="trailing" constant="8" id="P4b-Iz-OOR"/>
                                                         <constraint firstItem="xN7-lO-5EL" firstAttribute="top" secondItem="aW6-fZ-ERn" secondAttribute="bottom" constant="2" id="QoH-hh-c9S"/>
                                                         <constraint firstItem="aW6-fZ-ERn" firstAttribute="leading" secondItem="gfz-Uw-pWx" secondAttribute="leading" constant="8" id="bRO-UV-StX"/>
                                                         <constraint firstItem="xRn-3D-afZ" firstAttribute="top" secondItem="xN7-lO-5EL" secondAttribute="bottom" constant="8" id="ev9-tE-cZI"/>
@@ -515,6 +541,9 @@
                                     <constraint firstAttribute="height" constant="45" id="EvX-hz-LTq"/>
                                 </constraints>
                                 <state key="normal" title="Review and Rating"/>
+                                <connections>
+                                    <action selector="reviewButton:" destination="ufy-RO-bhi" eventType="touchUpInside" id="W8f-n1-mm0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOc-2x-FYq">
                                 <rect key="frame" x="20" y="104" width="374" height="21"/>
@@ -594,7 +623,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-Ll-aT6">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="453" height="44"/>
                                 <items>
                                     <navigationItem title="Course Lessons" id="sEP-J2-h2l">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="f5z-u2-TWq">
