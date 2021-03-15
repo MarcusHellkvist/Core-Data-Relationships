@@ -31,11 +31,23 @@ class ProgressionViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        setViewControllerStyle()
+        
         lessons = DataManager.shared.getLessonsForCourseId(courseId: (userCourse?.course!.courseId)!)
         lessonAmount = lessons.count
         
         getUserCourse()
 
+    }
+    
+    func setViewControllerStyle() {
+        //STYLE
+        view.layer.backgroundColor = UIColor.myBlue.cgColor
+        progressView.progressTintColor = UIColor.myYellow
+        courseTitle.textColor = UIColor.white
+        teacherLabel.textColor = UIColor.white
+        progressViewLabel.textColor = UIColor.white
+        tableView.backgroundColor = UIColor.myBlue
     }
     
     func setText() {
@@ -58,6 +70,11 @@ class ProgressionViewController: UIViewController {
 }
 
 extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lessons.count
     }

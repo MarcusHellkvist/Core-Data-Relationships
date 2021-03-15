@@ -15,6 +15,10 @@ class ProgressionTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        lessonTitleLabel.textColor = UIColor.white
+        lessonLengthLabel.textColor = UIColor.white
+        self.backgroundColor = UIColor.myBlue
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
