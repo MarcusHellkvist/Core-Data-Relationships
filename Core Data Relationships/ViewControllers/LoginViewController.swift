@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
 //        DataManager.shared.deleteAllUsers()
 //        DataManager.shared.deleteAllCourses()
         
+        self.hideKeyboardWhenTappedOutside()
+        
         // OVERALL CHANGES TO THE APP
         UITabBar.appearance().tintColor = UIColor.myYellow
         UITabBar.appearance().barTintColor = UIColor.myBlue

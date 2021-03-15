@@ -25,6 +25,7 @@
 		035CDFAF25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 035CDFAD25F8DE400014AE31 /* Core_Data_Relationships.xcdatamodeld */; };
 		035CDFB125F8DE460014AE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035CDFB025F8DE460014AE31 /* Assets.xcassets */; };
 		035CDFB425F8DE460014AE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035CDFB225F8DE460014AE31 /* LaunchScreen.storyboard */; };
+		03E446C725FFCBC800DCEE24 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E446C625FFCBC800DCEE24 /* HideKeyboard.swift */; };
 		03EFBA3025FD1E9E00756D62 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA2F25FD1E9E00756D62 /* CustomColors.swift */; };
 		03EFBA3425FD1EEF00756D62 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3325FD1EEF00756D62 /* CustomButton.swift */; };
 		03EFBA3825FD1F1400756D62 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EFBA3725FD1F1400756D62 /* CustomTextField.swift */; };
@@ -62,6 +63,7 @@
 		035CDFB025F8DE460014AE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		035CDFB325F8DE460014AE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		035CDFB525F8DE460014AE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E446C625FFCBC800DCEE24 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 		03EFBA2F25FD1E9E00756D62 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		03EFBA3325FD1EEF00756D62 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		03EFBA3725FD1F1400756D62 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				034CC07F25FA74F80066E4E7 /* ActiveCourseTableViewCell.swift */,
 				03EFBA3A25FD218F00756D62 /* RatingModel.swift */,
 				03EFBA4025FE362A00756D62 /* ProgressionTableViewCell.swift */,
+				03E446C625FFCBC800DCEE24 /* HideKeyboard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				031D6CC125F9989000C99BEA /* CourseDelegate.swift in Sources */,
 				03EFBA4725FE36AC00756D62 /* ProgressionViewController.swift in Sources */,
 				03EFBA3825FD1F1400756D62 /* CustomTextField.swift in Sources */,
+				03E446C725FFCBC800DCEE24 /* HideKeyboard.swift in Sources */,
 				03FB9F2225FE420E002C503B /* Lesson+CoreDataClass.swift in Sources */,
 				03FB9F1C25FE420E002C503B /* User+CoreDataClass.swift in Sources */,
 				035CDFA525F8DE400014AE31 /* AppDelegate.swift in Sources */,
