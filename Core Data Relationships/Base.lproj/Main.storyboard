@@ -494,7 +494,7 @@
                     <tabBarItem key="tabBarItem" title="My Courses" image="book" catalog="system" id="3XL-aG-95X"/>
                     <connections>
                         <outlet property="tableView" destination="tvT-02-n0h" id="jZe-Jz-Oea"/>
-                        <segue destination="ufy-RO-bhi" kind="presentation" identifier="progressSegue" id="8pM-6C-uya"/>
+                        <segue destination="ufy-RO-bhi" kind="showDetail" identifier="progressSegue" id="NZ0-rj-9xa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0a-9J-ZBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -607,6 +607,7 @@
                             <constraint firstItem="prz-pM-tzG" firstAttribute="trailing" secondItem="Zi8-az-Ja7" secondAttribute="trailing" constant="20" id="zxL-vc-w5w"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aU0-hd-Ohf"/>
                     <connections>
                         <outlet property="courseTitle" destination="LOc-2x-FYq" id="f7r-HI-YGO"/>
                         <outlet property="progressView" destination="BfL-P4-S0G" id="tji-if-Bvf"/>
@@ -617,7 +618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8t-vC-1Vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2250.7246376811595" y="1587.7232142857142"/>
+            <point key="canvasLocation" x="2251" y="1568"/>
         </scene>
         <!--Course Details View Controller-->
         <scene sceneID="Ooi-FP-385">

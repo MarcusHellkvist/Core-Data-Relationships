@@ -207,6 +207,24 @@ class DataManager {
         userCourse.status = status
     }
     
+    func getUserCourse(userCourse: UserCourse) -> UserCourse {
+        
+        var uCourses: [UserCourse] = []
+        
+        if let userId = userCourse.user?.userId, let courseId = userCourse.course?.courseId {
+            let request: NSFetchRequest<UserCourse> = UserCourse.fetchRequest()
+            let predicate = NSPredicate(format: "user.userId == %i AND course.courseId == %i", userId, courseId)
+            request.predicate = predicate
+            
+            do{
+                uCourses = try persistentContainer.viewContext.fetch(request)
+            } catch {
+                print("Error fetching courses")
+            }
+        }
+        return uCourses[0]
+    }
+    
     private func getActiveCourses(user: User) -> [UserCourse] {
         let request: NSFetchRequest<UserCourse> = UserCourse.fetchRequest()
         let predicate = NSPredicate(format: "user.userId == %i", user.userId)

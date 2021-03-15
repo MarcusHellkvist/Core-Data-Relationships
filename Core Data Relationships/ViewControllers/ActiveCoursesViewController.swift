@@ -36,6 +36,7 @@ class ActiveCoursesViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        print("view did appear")
         getAllCourses()
     }
     
