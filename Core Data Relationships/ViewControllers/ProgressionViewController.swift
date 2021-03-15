@@ -50,6 +50,11 @@ class ProgressionViewController: UIViewController {
         setText()
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
 
 extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource {
