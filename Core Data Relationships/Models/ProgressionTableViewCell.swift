@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MyCellDelegate: class {
-    func didTapButtonInCell(_ cell: ProgressionTableViewCell)
+    func didTapButtonInCell(_ cell: ProgressionTableViewCell, cellButton: UIButton)
 }
 
 class ProgressionTableViewCell: UITableViewCell {
@@ -35,7 +35,7 @@ class ProgressionTableViewCell: UITableViewCell {
     }
     
     @IBAction func cellButtonTapped(_ sender: UIButton) {
-        delegate?.didTapButtonInCell(self)
+        delegate?.didTapButtonInCell(self, cellButton: cellButton)
     }
     
 

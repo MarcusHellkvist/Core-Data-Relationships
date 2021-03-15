@@ -108,7 +108,7 @@ extension ProgressionViewController: UITableViewDelegate, UITableViewDataSource 
 }
 
 extension ProgressionViewController: MyCellDelegate{
-    func didTapButtonInCell(_ cell: ProgressionTableViewCell) {
+    func didTapButtonInCell(_ cell: ProgressionTableViewCell, cellButton: UIButton) {
         let progression = totalAmount / Double(lessonAmount)
         
         if userCourse!.progression >= 1.0 {
@@ -118,5 +118,9 @@ extension ProgressionViewController: MyCellDelegate{
         }
         DataManager.shared.saveContext()
         getUserCourse()
+        cellButton.setTitle("Done!", for: .disabled)
+        cellButton.isEnabled = false
     }
+    
+    
 }
